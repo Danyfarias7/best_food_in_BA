@@ -1,0 +1,19 @@
+//FUNCIONES
+
+.calcularPadding(@medidaBase, @proporcion: 0.7 ) {
+  padding: @medidaBase (@medidaBase * 0.7);
+}
+
+.flex(@fd: row, @jc: center, @ai: ceter) {
+  display: flex;
+  flex-direction: @fd;
+  justify-content: @jc;
+  align-items: @ai;
+}
+
+.grid(@cantCol,@tamFilas,@gap) {
+  display: grid;
+  grid-template-columns: repeat(@cantCol, 1fr);
+  grid-auto-rows: @tamFilas;
+  grid-gap: @gap;
+}
