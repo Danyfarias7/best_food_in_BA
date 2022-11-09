@@ -1,0 +1,4 @@
+Vendor
+The /vendor folder contains all the third party files that the application needs. It can be a reset CSS file, bootstrap, anything you could think of.
+
+If these files should be included in any page of the website, we import in /base/general.scss.

@@ -1,0 +1,4 @@
+Components 
+Following the component-based approach of Javascript frameworks like React, we treat everything a component. These are independent, reusable pieces of the UI and you can think of components like a navbar, a header or a button.
+
+That’s why instead of using a layout folder for elements like a Footer or a Header, we create pages that are composed by components.

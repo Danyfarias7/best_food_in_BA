@@ -1,0 +1,4 @@
+Abstracts
+The /abstracts folder contains all the sass helpers you can create to help you out on your project. This is all about sass tools, variables, mixins, functions, placeholders, etc.
+
+We’re using the _global.scss to import all files so we don’t bloat other files with these imports.
