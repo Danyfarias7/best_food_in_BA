@@ -3,7 +3,9 @@ main.principal {
     // padding: @paddingbase;
     @include calcularPadding(20px);
   }
-
-  background-color: lighten($primaryColor, 25%);
+  font-family: 'Poppins', sans-serif;
+  
+  // font-family: 'Poor Story', cursive;
+  // background-color: lighten($primaryColor, 25%);
   
 }

@@ -1,0 +1,57 @@
+/*
+     <section id="banners">
+        <div class="banner">
+          <img src="img/lemon.jpg" width="60pw" height="20vh" alt="">
+          <div class="text">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repellendus odit quae eius minus?</p>
+          </div>
+        </div>
+      
+      </section>
+*/
+
+#banners {
+  height: 100vh;
+  padding: 0;
+  // background-color: #0528d8;
+ 
+  .banner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // @include calcularPadding(10px, 0.9);
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
+    
+    }
+
+    .text {
+      $width: 70%;
+      $height: 35%;
+      width: $width;
+      height: $height;
+      
+      @include flex(column, center, center);
+      padding: 0 20px;
+
+      position: absolute;
+      right: (100% - $width) / 2;
+      top: (100% - $height) / 2;
+
+      background-color: rgba($grey7, 0.5);
+      color: white;
+      font-size: 13px;
+      border-radius: 15px;
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

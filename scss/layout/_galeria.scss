@@ -5,10 +5,7 @@
   // grid-auto-rows: 400px; TODAS VAN A MEDIR 400px
   // grid-gap: 15px 10px;
 
-  h1 {
-    color: red;
-    
-  }
+  
 
   .products {
     @include grid(1, 600px, 20px 15px);
@@ -17,7 +14,6 @@
     .product {
       @include grid(1, 0, 0px);
       grid-template-rows: 50% 40% 10%;
-      // border: red 2px solid;
       background-color: $bcCards;
 
       border-radius: 18px;
