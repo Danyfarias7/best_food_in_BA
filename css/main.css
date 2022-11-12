@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +9,77 @@
   list-style: none;
 }
 
+#filtro {
+  width: 80%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  right: 10%;
+  top: 32.5%;
+  background-color: rgba(73, 80, 87, 0.5);
+  color: white;
+  font-size: 13px;
+  border-radius: 15px;
+}
+#filtro h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.filtro-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.filtro-items:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #filtro {
+    width: 80%;
+    height: 60%;
+  }
+  #filtro .filtro-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*
      <section id="banners">
         <div class="banner">
@@ -37,34 +109,24 @@
   -o-object-position: left;
      object-position: left;
 }
-#banners .banner .text {
-  width: 70%;
-  height: 35%;
+#banners .banner .filtro-items-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
-  position: absolute;
-  right: 15%;
-  top: 32.5%;
-  background-color: rgba(73, 80, 87, 0.5);
-  color: white;
-  font-size: 13px;
-  border-radius: 15px;
+  gap: 10px;
 }
-#banners .banner .text h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+#banners .banner .filtro-items-div p:hover {
+  border-bottom: solid 1px white;
 }
 
 #header {
@@ -85,13 +147,17 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  background-color: linear-gradient(180deg, #7D6CF1, #C298F9);
-  background: linear-gradient(130deg, #7048e8 16%, #364fc7 87%);
+  background-color: linear-gradient(250deg, #3A4297, #bd21dc);
+  background: linear-gradient(250deg, #3A4297, #bd21dc);
   position: sticky;
   top: 0;
   box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
   -webkit-box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
   -moz-box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
+}
+#header .header-img img {
+  width: 70px;
+  height: 70px;
 }
 #header h1 {
   height: 15vh;
@@ -294,13 +360,17 @@ main.principal section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  background-color: linear-gradient(180deg, #7D6CF1, #C298F9);
-  background: linear-gradient(130deg, #7048e8 16%, #364fc7 87%);
+  background-color: linear-gradient(250deg, #3A4297, #bd21dc);
+  background: linear-gradient(250deg, #3A4297, #bd21dc);
   position: sticky;
   top: 0;
   box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
   -webkit-box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
   -moz-box-shadow: 2px 10px 30px -5px rgba(130, 135, 129, 0.75);
+}
+#header .header-img img {
+  width: 70px;
+  height: 70px;
 }
 #header h1 {
   height: 15vh;
